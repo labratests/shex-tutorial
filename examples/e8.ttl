@@ -1,0 +1,7 @@
+prefix : <http://example.org/>
+
+:x1 :p "a"; :q "b" .
+:x2 :q "c"  .
+
+:bad1 :p "a"; :q "c" .
+

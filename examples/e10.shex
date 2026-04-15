@@ -1,0 +1,9 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Non-stratified negation schema
+# See: https://labra.weso.es/publication/2017_semantics-validation-shapes-schemas/
+:S NOT @:T 
+:T NOT @:S
+
+

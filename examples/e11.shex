@@ -1,0 +1,14 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Example from https://labra.weso.es/publication/2015_complexityexpressivenessshexrdf/
+:T0 { a @:T1 * ; :b @:T2 }
+:T1 { (:a @:T1  | :b @:T2)* }
+:T2 { :b @:T2 * | :c @:T1 }
+
+:U0 { :a @:U1 }
+:U1 { :b @:U2; :c @:U3 }
+:U2 { (:b @:U2)* ; :c @:U3}
+:U3 {}
+
+

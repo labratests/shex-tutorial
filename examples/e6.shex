@@ -1,0 +1,16 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:S { :p xsd:string    ; 
+     :p @:T *         ;
+} AND {
+    :p [ "a" "b" "c"] ;
+    :p @:U * 
+}
+
+:T { :p xsd:integer + ;
+     :p @:S *
+}
+
+:U { :p [ 0 1 2 ] }
+

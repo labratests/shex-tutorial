@@ -1,0 +1,10 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Example 5 from https://labra.weso.es/publication/2017_semantics-validation-shapes-schemas/
+:S NOT @:T 
+:T { :p @:U ; :p xsd:string } 
+:U { :p @:V }
+:V { :p @:U }
+
+

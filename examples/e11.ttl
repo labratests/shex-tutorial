@@ -1,0 +1,15 @@
+prefix : <http://example.org/>
+
+:x0 :a :x1, :x3 ; :b :x2 .
+:x1 :a :x3 .
+:x2 :b :x1, :x4 .
+:x4 :c :x1 .
+
+
+:y0 :a :y1 .
+:y1 :b :y2 ; :c :y3 .
+:y2 :c :y3 .
+
+:z0 :a :z1 .
+:z1 :b :z1 .
+:z1 :c :z2 .

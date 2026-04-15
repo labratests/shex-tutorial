@@ -1,0 +1,10 @@
+prefix : <http://example.org/>
+
+:x1 :p "a"; :p :x2 .
+:x2 :p 1  .
+
+:x3 :p "a"; :p :x4 .
+:x4 :p 1  ; :p :x3 .
+
+:bad1 :p "a"; :p 1; :p :x1 .
+
